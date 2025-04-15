@@ -18,8 +18,8 @@ def handle_login():
 
 
     if username == "admin" and password == "bawn123":
-        window.destroy()  # ❌ Close login window
-        open_main_panel()  # ✅ Open main panel
+        window.destroy()  # Close login window
+        open_main_panel()  # Open main panel
     else:
         messagebox.showerror("Login Failed", "Invalid username or password.")
 
@@ -83,7 +83,7 @@ Button(
     image=button_image_2,
     borderwidth=0,
     highlightthickness=0,
-    command=handle_login,  # ✅ Replace with real login function
+    command=handle_login,  # Replace with real login function
     relief="flat"
 ).place(x=890.0, y=606.0, width=199.0, height=52.0)
 
@@ -113,7 +113,7 @@ entry_1 = Entry(  # This is now for password
     bg="#F0EFEF",
     fg="#000716",
     highlightthickness=0,
-    show="*"  # 👈 Masks the password
+    show="*"  # Masks the password
 )
 entry_1.place(
     x=750.0,
